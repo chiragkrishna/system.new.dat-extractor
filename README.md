@@ -9,7 +9,8 @@ use this cmd to select a rom zip file and extract system.new.dat
 
 
 requirements:
-1)python 3.x
+1)python v3.x
+2)7-Zip v16.x
 
 
 
