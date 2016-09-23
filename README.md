@@ -8,5 +8,5 @@ requirements:
 
 
 thanks to:
-And_pda for imgextractot
+And_pda for imgextractot &
 xpirt for sdat2img.py 
