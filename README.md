@@ -10,13 +10,13 @@ download these files and place them in one folder:
 
 ========================================================
 convert_dat:  
-to use this cmd 1st set enviroment variable path after that use command "convert_dat" to extract system.new.dat in any folder    
+to use this cmd 1st set enviroment variable path for the 3 downloaded files, after that use command "convert_dat" to extract system.new.dat in any folder    
 in action:   
 https://youtu.be/bV0U6MMiG8k
 
 ========================================================
 convert_dat2:  
-use this cmd to select a rom zip file and extract system.new.dat
+use this cmd to select a rom zip file and extract system.new.dat to a folder called "system"
 in action:   
 https://youtu.be/ysgjPvrxaa8  
 
@@ -26,7 +26,7 @@ https://youtu.be/ysgjPvrxaa8
 
 
 
-requirements:  
+requirements: (make sure environment variables path are set for python and 7-Zip) 
 1)python v3.x  
 2)7-Zip v16.x  
 
