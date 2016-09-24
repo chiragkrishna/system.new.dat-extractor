@@ -22,4 +22,4 @@ xpirt for sdat2img.py
 
 
 more info:  
-http://forum.xda-developers.com/android/general/tools-extract-dat-t3467581/post68828808#post68828808
+http://forum.xda-developers.com/mi-5/how-to/tools-auto-extract-dat-t3467578
