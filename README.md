@@ -17,3 +17,9 @@ requirements:
 thanks to:
 And_pda for imgextractor &
 xpirt for sdat2img.py 
+
+
+
+
+more info:  
+http://forum.xda-developers.com/android/general/tools-extract-dat-t3467581/post68828808#post68828808
