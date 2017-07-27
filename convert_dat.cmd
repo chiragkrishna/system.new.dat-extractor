@@ -100,7 +100,6 @@ goto :check_files
 :convert_context
 echo converting file_contexts.bin to file_contexts
 %cd%\tools\fct.exe %cd%\%text2%\file_contexts.bin
-goto :check_files
 
 
 :find_python
