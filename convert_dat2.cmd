@@ -68,6 +68,13 @@ del %cd%\%text2%\system.img
 del %cd%\%text2%\system.img.ext4
 del %cd%\%text2%\system_statfile.txt
 cls
+if exist %cd%\%text2%\file_contexts.bin goto convert_context
+echo.
+:convert_context
+echo converting file_contexts.bin to file_contexts
+%cd%\tools\fct.exe -o file_contexts -e %cd%\%text2%\file_contexts.bin
+echo .
+copy %cd%\file_contexts %cd%\%text2%\file_contexts
 if not exist %cd%\%text2%\system.new.dat goto stop1
 echo.
 if not exist %cd%\%text2%\system.transfer.list goto stop2
@@ -96,6 +103,7 @@ pause
 goto :check_files
 
 
+
 :find_python
 python --version 3>NUL
  if %ERRORLEVEL% ==0 (goto :python) else (goto :nopython)
@@ -108,7 +116,7 @@ pause
 exit
 
 :python
-sdat2img.py %cd%\%text2%\system.transfer.list %cd%\%text2%\system.new.dat %cd%\%text2%\system.img.ext4
+%cd%\tools\sdat2img.py %cd%\%text2%\system.transfer.list %cd%\%text2%\system.new.dat %cd%\%text2%\system.img.ext4
  IF EXIST %cd%\%text2%\system.img.ext4 goto convert
   
 :convert
@@ -118,7 +126,7 @@ echo converting "system.img.ext4" to "system"
 cd %text2%
 REN system.img.ext4 system.img 
 cd..
-Imgextractor.exe %cd%\%text2%\system.img %cd%\system -i
+%cd%\tools\Imgextractor.exe %cd%\%text2%\system.img %cd%\system -i
 RD /S /Q %cd%\%text2%
 start %cd%\system
 exit
