@@ -5,7 +5,7 @@ download these files and place them in one folder:
 ========================================================
 1) Imgextractor.exe  
 2) sdat2img.py  
-3) convert_dat.cmd (or) convert_dat2.cmd 
+3) convert_dat.cmd 
 
 
 
