@@ -8,14 +8,7 @@ download these files and place them in one folder:
 3) convert_dat.cmd (or) convert_dat2.cmd 
 
 
-========================================================
-convert_dat:  
-to use this cmd 1st set enviroment variable path for the 3 downloaded files, after that use command "convert_dat" to extract system.new.dat in any folder    
-in action:   
-https://youtu.be/bV0U6MMiG8k
 
-========================================================
-convert_dat2:  
 use this cmd to select a rom zip file and extract system.new.dat to a folder called "system"
 in action:   
 https://youtu.be/ysgjPvrxaa8  
