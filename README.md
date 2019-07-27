@@ -12,9 +12,8 @@ Requiremnets
 [LEFT][I]Note 1:  make sure your environment variables path is correctly set for python and 7-Zip(set it in system properties-->advance-->environment variable-->path)
 Note2: while installing python, set the environment variables in installer itself[/I][/LEFT]
 
-==============================================
-[SIZE="5"][B]How To[/B][/SIZE]
-==============================================
+
+How To
 1) extract [I]system_new_dat_extractor.zip[/I] into a folder (preferable in a path where there are no name spaces)
 2) place your rom zip file in the directory where you extracted
 3) open the file system_image_extractor_V4.cmd
@@ -24,9 +23,7 @@ Note2: while installing python, set the environment variables in installer itsel
 [I]*make sure to delete the created folders every time you want to extract[/I]
 
 
-==============================================
-[SIZE="5"][B]Credits[/B][/SIZE]
-==============================================
+Credits
 1) And_pda for imgextractor
 2) [URL="http://forum.xda-developers.com/member.php?u=5361113"]xpirt[/URL] for sdat2img.py
 3) google
@@ -37,12 +34,11 @@ Note2: while installing python, set the environment variables in installer itsel
 
 
 
-==============================================
-[SIZE="5"][B]Change-log[/B][/SIZE]
-==============================================
+
+Change-log
 
 
-[CODE]* initial release
+* initial release
 
 -----------------------------
 
@@ -62,7 +58,6 @@ V4 (25-06-2019)
 2) Fixed issues where user files got deleted automatically
             -it was due spaces in path
 
-[/CODE]
 
 
 
@@ -72,4 +67,4 @@ V4 (25-06-2019)
 
 
 
-[URL="https://github.com/chiragkrishna/system.new.dat-extractor"]source[/URL][/CENTER]
+
