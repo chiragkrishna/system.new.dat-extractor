@@ -1,18 +1,12 @@
-[CENTER]==============================================
-[B][SIZE="6"][U]Auto System Image Exctractor[/U][/SIZE][/B]
-==============================================
+Auto System Image Exctractor
 
-==============================================
-[B][SIZE="4"][U]Supports[/U][/SIZE][/B]
+
+Supports
 1) system.new.dat
 2) system.new.dat.br
 3) payload.bin
-==============================================
 
-
-==============================================
-[SIZE="5"][B]Requiremnets[/B][/SIZE]
-==============================================
+Requiremnets
 1. [URL="https://www.python.org/downloads/"]python v3.x[/URL]
 2.[URL="http://www.7-zip.org/download.html"] 7-Zip[/URL]
 [LEFT][I]Note 1:  make sure your environment variables path is correctly set for python and 7-Zip(set it in system properties-->advance-->environment variable-->path)
