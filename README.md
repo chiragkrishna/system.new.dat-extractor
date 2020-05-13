@@ -1,4 +1,4 @@
-Auto System Image Exctractor
+Auto System Image Extractor
 
 
 Supports
