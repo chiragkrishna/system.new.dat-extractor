@@ -31,7 +31,7 @@ pause
 goto check_zip
 
 :extract_rom
-7z e *zip -o%cd%\temp_files\rom -y
+"%cd%\tools\7z.exe" e *zip -o%cd%\temp_files\rom -y
 
 cls
 if not exist "%cd%\temp_files\rom\file_contexts.bin" goto check_list
