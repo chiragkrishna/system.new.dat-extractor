@@ -101,6 +101,8 @@ goto endalt
 :brotli
 echo converting system.new.dat.br to system.new.dat
 ".\tools\brotli.exe" -d ".\temp_files\rom\system.new.dat.br" -o ".\temp_files\rom\system.new.dat"
+echo converting vendor.new.dat.br to vendor.new.dat
+if exist ".\temp_files\rom\vendor.new.dat.br" ".\tools\brotli.exe" -d ".\temp_files\rom\vendor.new.dat.br" -o ".\temp_files\rom\vendor.new.dat"
 cls
 
 :find_python
@@ -116,10 +118,12 @@ exit
 
 :python
 python ".\tools\sdat2img.py" ".\temp_files\rom\system.transfer.list" ".\temp_files\rom\system.new.dat" ".\temp_files\rom\system.img"
+if exist ".\temp_files\rom\vendor.new.dat" python ".\tools\sdat2img.py" ".\temp_files\rom\vendor.transfer.list" ".\temp_files\rom\vendor.new.dat" ".\temp_files\rom\vendor.img"
 
 :endalt
 if exist ".\payload_output" goto payload_last
-".\tools\Imgextractor.exe" ".\temp_files\rom\system.img" ".\extracted_files" -i
+".\tools\Imgextractor.exe" ".\temp_files\rom\system.img" ".\extracted_files\system" -i
+if exist ".\temp_files\rom\vendor.img" ".\tools\Imgextractor.exe" ".\temp_files\rom\vendor.img" ".\extracted_files\vendor" -i
 start .\extracted_files
 start .\temp_files\rom
 exit
