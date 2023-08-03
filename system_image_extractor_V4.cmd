@@ -75,7 +75,7 @@ echo system.new.dat nor system.new.dat.br nor payload.bin not found!!
 echo make sure you are using the correct zip file
 echo closing...
 pause
-exit
+exit /b
 
 :stop2
 echo WARNING!!!
@@ -83,7 +83,7 @@ echo system.transfer.list not found!!
 echo make sure you are using the correct zip file
 echo closing...
 pause
-exit
+exit /b
 
 :payload_exctract
 mkdir ".\payload_input"
@@ -114,7 +114,7 @@ echo please download python v3.x
 echo https://www.python.org/downloads/
 echo make sure your environment variable path is set
 pause
-exit
+exit /b
 
 :python
 python ".\tools\sdat2img.py" ".\temp_files\rom\system.transfer.list" ".\temp_files\rom\system.new.dat" ".\temp_files\rom\system.img"
@@ -126,10 +126,10 @@ if exist ".\payload_output" goto payload_last
 if exist ".\temp_files\rom\vendor.img" ".\tools\Imgextractor.exe" ".\temp_files\rom\vendor.img" ".\extracted_files\vendor" -i
 start .\extracted_files
 start .\temp_files\rom
-exit
+exit /b
 
 : payload_last
 ".\tools\Imgextractor.exe" ".\payload_output\system.img" ".\extracted_files" -i
 start .\extracted_files
 start .\payload_output
-exit
+exit /b
